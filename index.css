@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 5%;
+    background: #F3F4FD;
+    font-family: 'Prompt', sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #3E3B51;
+    font-size: 1.1rem;
+}
+h1{
+    font-size: 2rem;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+label{
+    display: block;
+}
+input{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+input::placeholder{
+    color: #B0AFB5;
+    font-family: 'Prompt', sans-serif;
+}
+button{
+    font-family: 'Prompt', sans-serif;
+    background-color: #FFB632;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+#weather{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 30px 0;
+    box-shadow: rgba(127, 131, 136, 0.2) 0px 8px 24px;
+    text-transform: capitalize;
+    text-align: center;
+}
+#temperature > p:nth-child(1){
+    font-size: 3rem;
+    font-weight: 700;
+}
+#temperature span{
+    color: #86848c;
+}
+#condition img{
+    max-width: 40%;
+    padding-top: 20px;
+}
+.weather-info{
+    padding: 20px 0;
+}
+@media screen and (min-width: 769px){
+    #weather{
+        text-align: left;
+    }
+    #weather-data{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
